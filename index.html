@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <script src="scripts/rmsAccordion.js"></script>
+    <script type="text/javascript">
+    	angular.module('AccordionApp', ['rmsAngularJSControls']);
+    	angular.module('AccordionApp').controller('AccordionAppCtrl', ['$scope', function($scope){
+    		
+    	}])
+
+    </script>
+<link rel="stylesheet" type="text/css" href="content/rmsAccordion.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<body>
+ <div ng-app="AccordionApp" ng-controller="AccordionAppCtrl" id="viewSearchResults" class="view-content-container">
+    <div class="container-fluid" style="padding-left:0">
+    <div class="col-md-2" style="padding-right:0">
+            <div class="panel panel-default" style="margin-bottom:0"><div class="panel-heading" style="border-bottom-width: 0; background:#5ACC52; color:white; font-weight:600 ">Search Request</div></div>
+            <div>
+                <div rms-accordion selected="true">
+                    <div rms-pane title="Order">
+                        <label>Account Code: </label>
+                        <input style="width:100% !important;" type="text"/>
+                        <label>Broker Id: </label>
+                        <input style="width:100% !important;" type="number" format="d"/>
+                        <label>Insured Name: </label>
+                        <input style="width:100% !important;" type="text" />
+                        <label >Requestor: </label>
+                        <input style="width:100% !important;" type="text"/>
+                    </div>
+                </div>
+                <div rms-accordion>
+                    <div rms-pane title="Report">
+                        <label>Report Category: </label>
+                        <input type="text" style="display:block !important; width:100% !important;" />
+                        <label>Report Type: </label>
+                        <select style="display:block !important; width:100% !important;"></select>
+                        <label>Inspector: </label>
+                        <input style="display:block !important; width:100% !important;" />
+                        <label>Report Region: </label>
+                        <input style="display:block !important; width:100% !important;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> 

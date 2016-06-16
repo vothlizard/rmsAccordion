@@ -1,0 +1,23 @@
+.col-md-6 {
+    padding-left: 0 !important;
+}
+.form-group .col-md-6 {
+    margin-bottom: 1px;
+ }
+.panel-body, .col-md-2 .panel-body {
+    background:#f4f4f4; 
+}
+.accordion-toggle {
+    cursor: pointer;
+}
+.panel-collapse {
+    display: none;
+}
+.panel-collapse.default {
+    display: block;
+}
+.panel-heading {
+    background:#3c3c3c; 
+    color:white; 
+    font-weight:600
+}
